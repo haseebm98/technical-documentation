@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id = "navbar">
+      <header>HTML Documentation</header>
+      <ul>
+        <li><a class = "nav-link" href = "#Introduction">Introduction</a></li>
+        <li><a class = "nav-link" href = "#Basics">Basics</a></li>
+        <li><a class = "nav-link" href = "#Heading">Heading</a></li>
+        <li><a class = "nav-link" href = "#Paragraphs">Paragraphs</a></li>
+        <li><a class = "nav-link" href = "#Text_Formatting">Text Formatting</a></li>
+        <li><a class = "nav-link" href = "#Links">Links</a></li>
+      </ul>
+    </nav>
+    <main id = "main-doc">
+      <section class = "main-section" id = "Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>HTML, standing for "HyperText Markup Language", is a markup language used to design web pages. It is a combination of Hypertext and Markup language. Hypertext is the element that defines links between web pages, while a markup language is used to define the text document inside the web page. Markup languages are human-readable, and uses tags to manipulate the text and data within.</p>
+          <p>HTML was created by Tim Berners-Lee in 1991, but wasn't released till two years later. The image below shows the years in which each version of HTML was released, up until the newest version: HTML5.</p>
+            <img src="https://i.ibb.co/8Kt9Vgp/HTML-image.png" alt="HTML-image" id = "html-image">
+        </article>
+      </section>
+
+      <section class = "main-section" id = "Basics">
+        <header>Basics</header>
+        <article>
+          <p>HTML uses tags to manipulate information. In this section, we will learn the most important tags every HTML page must include. Some tags are self closing, so don't need a tag to declare its end. However, most tags need a closing tag, normally the same as the opening tag, but with a / e.g. <code>&ltp&gt</code> and <code>&lt/p&gt</code>. Below, we list the basic elements in every HTML page.</p>
+          <ul>
+            <li><code>&lt!DOCTYPE html&gt</code>: This goes at the top of the page, before any other tag, and declares to the web that this page is a HTML type document.</li>
+            <li><code>&lthtml&gt</code>: Every HTML page must be enclosed between these tags. It begins with this and ends with its relevant closing tag.</li>
+            <li><code>&lthead&gt</code>: This tag comes after the HTML tag, and contains all the header information about the web page, like the title and other miscellaneous information. It must be closed with its closing tag.</li>
+            <li><code>&lttitle&gt</code>: This goes inside the head tag, and declares the title that will be visible on the tab of the internet browser. This must be closed with its closing tag.</li>
+            <li><code>&ltbody&gt</code>: This is arguably the most important tag. It contains the whole visible body of the website. Once again, it is closed with its relevant tag. Everything enclosed within these tags will be visible to the viewer.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class = "main-section" id = "Heading">
+        <header>Heading</header>
+        <article>
+          <p> An HTML heading tag is used to define headings of a page. There are six levels of headings, from <code>&lth1&gt</code> through to <code>&lth6&gt</code>. <code>&lth1&gt</code> is the highest level of headings, and <code>&lth6&gt</code> is the lowest. All heading tags must be closed.</p>
+          <ul>
+            <li><code>&lth1&gt</code>: used for main headings in a page</li>
+            <li><code>&lth2&gt</code>: used for subheadings</li>
+            <li><code>&lth3&gt</code> - <code>&lth6&gt</code>: if there are other lower level headings required inside subheadings, these are normally used</li>
+          </ul>
+          <p>The sizes of each heading varies with the browser, but they will always be in size order, i.e heading 1 will always be larger than 2, 3, ... down to 6. Their individual sizes can be manipulated further through the use of CSS.</p>
+        </article>
+      </section>  
+
+      <section class = "main-section" id = "Paragraphs">
+        <header>Paragraphs</header>
+        <article>
+          <p>In HTML, the simplest way to write paragraphs is through the use of <code>&ltp&gt</code> tags. Again, these require closing tags. When using these, any text enclosed between them will display as one continuous paragraph, so no line break or double spacing will be visible. To write a new line, it is common practice to simply use new paragraph tags.</p>
+          <p>The <code>&ltbr&gt</code> tag is a way of inserting line breaks both inside and outside paragraph tags. Inside the paragraph tags, it acts as a way of separating parts of the paragraph onto a new line. This tag has no closing tag.</p>
+          <p>Inside the <code>&ltp&gt</code> tag, we can declare attributes to change the layout. For example, we can use <code>&ltp align = "center"&gt</code> to align all text in that paragraph to the center of the page. The same can be done with left and right alignment.</p>
+          <p>Lastly, there exists another tag, called the <code>&ltpre&gt</code> tag. Any text enclosed within these tags will display any extra spacing or line breaks. Unlike the paragraph tag, it allows the use of extra spacing and line breaks without the use of another tag.</p>
+        </article>
+      </section>
+
+      <section class = "main-section" id = "Text_Formatting">
+        <header>Text Formatting</header>
+        <article>
+          <p>Below, we will list some of the possible text formatting that can be done without the use of CSS.</p>
+          <ul>
+            <li><code>&ltstrong&gt</code>: Makes text bold/strong</li>
+            <li><code>&ltb&gt</code>: Makes text bold</li>
+            <li><code>&ltsmall&gt</code>: Makes text small</li>
+            <li><code>&ltmark&gt</code>: Highlights text in yellow</li>
+            <li><code>&lti&gt</code>: Makes text italic</li>
+            <li><code>&ltem&gt</code>: Makes text emphasised (italic)</li>
+            <li><code>&ltsup&gt</code>: Puts text in superscript</li>
+            <li><code>&ltsub&gt</code>: Puts text in subscript</li>
+            <li><code>&ltdel&gt</code>: Strikes through text</li>
+            <li><code>&ltins&gt</code>: Underlines text</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class = "main-section" id = "Links">
+        <header>Links</header>
+        <article>
+          <p>A link is a connection from one website to another. Every link must have an <code>&lta&gt</code> tag, with a closing. The link can be anything, from an image, to a video, to a document. The image below shows how to import a link into your web page. You can also link something that is already in your website. These are called "internal links".
+
+            <img src="https://i.ibb.co/Xk4gcsb/href-image.png" alt="href-image" id = "href-image">
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
